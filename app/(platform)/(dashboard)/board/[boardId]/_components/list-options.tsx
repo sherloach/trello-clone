@@ -34,7 +34,7 @@ export const ListOptions = ({
       toast.success(`List "${data.title}" deleted`);
       closeRef.current?.click();
     },
-    onError: (error) => {
+    onError: (error) =>{
       toast.error(error);
     }
   });
