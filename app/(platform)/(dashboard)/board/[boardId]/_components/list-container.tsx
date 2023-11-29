@@ -30,7 +30,6 @@ export const ListContainer = ({
   boardId,
 }: ListContainerProps) => {
   const [orderedData, setOrderedData] = useState(data);
-  console.log({orderedData})
 
   const { execute: executeUpdateListOrder } = useAction(updateListOrder, {
     onSuccess: () => {
